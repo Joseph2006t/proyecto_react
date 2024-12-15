@@ -20,7 +20,7 @@ app.use((req, res, next) => {
 
 app.use('/api', router);
 
-
+//obliga a que se abra el proyecto en ese puerto, en este caso en el 3000
 const port = process.env.PORT || 3000;
 
 httpServer.listen(port, () => {
