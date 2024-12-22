@@ -5,13 +5,10 @@ export default function Navbar(){
     if(!dataUser) {
         
         return(
-            <nav className="bg-red-700 p-4 h-[10vh]">
-                <ul className="flex flex-row items-center justify-around text-white font-extrabold text-md">
+            <nav className="bg-red-700 p-4 h-[10vh] flex ">
+                <ul className="w-full flex flex-row items-center justify-around text-white font-extrabold text-md">
                     <li>
                         <Link to={"/"}>Inicio</Link>
-                    </li>
-                    <li>
-                        <Link to={"/sobre-nosotros"}>Sobre Nosotros</Link>
                     </li>
                     <li>
                         <Link to={"/registro"}>Registró</Link>

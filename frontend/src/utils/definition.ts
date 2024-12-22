@@ -7,3 +7,12 @@ export type UsuarioSesion={
     email: string;
     password1: string;
 }
+
+export type Producto={
+    id: number;
+    nombre: string;
+    descripcion: string;
+    img: string;
+    precio: number;
+    stock: number;
+}

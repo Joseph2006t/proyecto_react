@@ -43,20 +43,61 @@ export default function Registro(){
             console.log(error)
         }
     }
-    return(
-        <div className="font-bold text-red-700 flex justify-center items-center min-h-[80vh]">
-            <div className="border border-2 border-black p-2">
-                <h1>Registro</h1>
-                <form onSubmit={handleRegistro} className="flex flex-col">
-                    <input type="text" name="nombres" placeholder="Nombres"/>
-                    <input type="text" name="apellidos" placeholder="Apellidos"/>
-                    <input type="text" name="numeroDocumento" placeholder="Número de Documento"/>
-                    <input type="text" name="telefono" placeholder="Telefono"/>
-                    <input type="text" name="email" placeholder="Correo electrónico"/>
-                    <input type="password" name="contrasena" placeholder="Contraseña"/>
-                    <button type="submit">Iniciar Sesión</button>
+    return (
+        <div className="font-sans bg-gray-100 flex justify-center items-center min-h-screen">
+            <div className="bg-white border border-gray-300 p-8 rounded-lg shadow-lg w-full max-w-sm">
+                <h1 className="text-2xl font-semibold text-center mb-6">Registro</h1>
+                <form onSubmit={handleRegistro} className="flex flex-col space-y-4">
+                    <input
+                        type="text"
+                        name="nombres"
+                        placeholder="Nombres"
+                        className="px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        required
+                    />
+                    <input
+                        type="text"
+                        name="apellidos"
+                        placeholder="Apellidos"
+                        className="px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        required
+                    />
+                    <input
+                        type="text"
+                        name="numeroDocumento"
+                        placeholder="Número de Documento"
+                        className="px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        required
+                    />
+                    <input
+                        type="text"
+                        name="telefono"
+                        placeholder="Teléfono"
+                        className="px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        required
+                    />
+                    <input
+                        type="email"
+                        name="email"
+                        placeholder="Correo electrónico"
+                        className="px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        required
+                    />
+                    <input
+                        type="password"
+                        name="contrasena"
+                        placeholder="Contraseña"
+                        className="px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        required
+                    />
+                    <button
+                        type="submit"
+                        className="bg-blue-500 text-white py-2 rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    >
+                        Registrar
+                    </button>
                 </form>
             </div>
         </div>
-    )
+    );
 }
